@@ -1,7 +1,7 @@
 export const BRAND = "TrendDrop";
 export const LEGAL_NAME = "FortuneCreations, LLC";
 export const CONTACT_EMAIL = "fortunecreationsut@froyorobo.com";
-export const SIGNUP_URL = "https://fortunecreationsut.wixsite.com/trenddrop/pricing-plans/plans-pricing";
+export const SIGNUP_URL = "https://buy.stripe.com/bJedRb2Bj0fub6a5Hx5ZC00";
 export const PRICE = "$19/month";
 export const NICHES = [
   ["Real Estate","From luxury listings to local market trends."],
@@ -43,8 +43,8 @@ export const FAQ: [string, [string,string][]][] = [
   ["What if I want to track two different niches?","Each membership tracks one niche. To track multiple niches, simply purchase additional memberships."],
  ]],
  ["Billing & Cancellation",[
-  ["How does billing work?","You'll be billed $19 on the day you sign up and then every 30 days after that. Billing is handled securely through Wix Payments."],
-  ["How do I cancel?","Log into your TrendDrop account and cancel from your dashboard with one click. No phone calls, no emails, no cancellation fees. Your service will continue until the end of your current billing period."],
+  ["How does billing work?","You'll be billed $19 on the day you sign up and then every 30 days after that. Billing and cancellation are handled securely through Stripe."],
+  ["How do I cancel?","Cancel anytime. Billing and cancellation are handled securely through Stripe. Manage or cancel your membership using the link in your Stripe receipt email. No phone calls, no cancellation fees. Your service will continue until the end of your current billing period."],
   ["Do you offer refunds?","Your initial month's payment is non-refundable. Cancel anytime and you will not be charged for any further months — no questions asked."],
   ["Is there an annual plan?","Not currently. We offer monthly billing only."],
  ]],
