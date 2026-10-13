@@ -1,0 +1,11 @@
+@import "tailwindcss";
+:root{--ink:#0f1222;--night:#0b0d1a;--cyan:#25f4ee;--pink:#fe2c55;--paper:#f6f5f2}
+@theme inline{--color-ink:var(--ink);--color-night:var(--night);--color-cyan:var(--cyan);--color-pink:var(--pink);--color-paper:var(--paper);--font-sans:var(--font-source-sans);--font-display:var(--font-fraunces)}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink)}
+.font-display{font-family:var(--font-fraunces),Georgia,serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:9999px;padding:.75rem 1.3rem;font-weight:650;transition:transform 120ms}
+.btn:hover{transform:translateY(-1px)}
+.btn-pink{background:var(--pink);color:#fff}
+.btn-line{border:1px solid rgba(255,255,255,.35);color:#fff}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
