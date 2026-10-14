@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Source_Sans_3 } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Header, Footer } from "@/components/Shell";
 import "./globals.css";
 const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin"] });
@@ -12,5 +13,5 @@ export const metadata: Metadata = {
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (<html lang="en" className={`${fraunces.variable} ${sourceSans.variable} h-full antialiased`}>
-    <body className="flex min-h-full flex-col font-sans"><Header />{children}<Footer /><Analytics /></body></html>);
+    <body className="flex min-h-full flex-col font-sans"><Header />{children}<Footer /><Analytics /><SpeedInsights /></body></html>);
 }
