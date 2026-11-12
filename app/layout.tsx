@@ -8,7 +8,7 @@ const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin"] });
 const sourceSans = Source_Sans_3({ variable: "--font-source-sans", subsets: ["latin"] });
 export const metadata: Metadata = {
   title: { default: "TrendDrop | Never Miss a Viral TikTok Again", template: "%s | TrendDrop" },
-  description: "Get the top 3 most viral TikToks in your niche delivered to your inbox every single morning. $19/month. Cancel anytime.",
+  description: "Get the top 3 most viral TikToks in your niche delivered to your inbox every single morning. $9/month after a 7-day free trial. Cancel anytime.",
   authors: [{ name: "FortuneCreations, LLC" }],
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
