@@ -1,7 +1,7 @@
 export const BRAND = "TrendDrop";
 export const LEGAL_NAME = "FortuneCreations, LLC";
 export const CONTACT_EMAIL = "fortunecreationsut@froyorobo.com";
-export const SIGNUP_URL = "https://buy.stripe.com/bJedRb2Bj0fub6a5Hx5ZC00";
+export const SIGNUP_URL = "https://buy.stripe.com/3cIcN7ek18M0gqu5Hx5ZC02";
 export const PRICE = "$9/month";
 export const PRICE_AMOUNT = "$9";
 export const TRIAL_LABEL = "7-day free trial";
