@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CTA } from "@/components/Shell";
+import { TrendingFinds } from "@/components/TrendingFinds";
 import { AUDIENCES, NICHES, PRICE, PRICE_AMOUNT, SAMPLE_EMAIL, SIGNUP_URL, TRIAL_LABEL } from "@/lib/content";
 const H = ({k,t,s}:{k:string;t:string;s?:string}) => (<div className="mx-auto max-w-3xl text-center"><p className="text-sm font-bold uppercase tracking-widest text-pink">{k}</p><h2 className="mt-2 font-display text-3xl sm:text-4xl">{t}</h2>{s&&<p className="mt-3 text-ink/70">{s}</p>}</div>);
 export default function Home(){return(<main>
@@ -13,6 +14,8 @@ export default function Home(){return(<main>
  <div className="border-t border-white/10"><dl className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-8 text-center sm:grid-cols-4">
   {[["141M+","videos analyzed daily"],["Any","niche, any topic"],["Delivered","every morning"],["Cancel","anytime"]].map(([a,b])=>(<div key={a}><dt className="font-display text-2xl text-cyan">{a}</dt><dd className="text-sm text-white/70">{b}</dd></div>))}
  </dl></div></section>
+
+ <TrendingFinds />
 
  <section className="px-4 py-16"><H k="What Is TrendDrop?" t="Your Personal TikTok Trend Researcher — Working 24/7"/>
   <div className="mx-auto mt-6 max-w-3xl space-y-4 text-lg text-ink/80"><p>TikTok moves fast. By the time you find a viral video in your niche, it&apos;s already old news.</p>

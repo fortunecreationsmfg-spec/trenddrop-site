@@ -26,6 +26,65 @@ export const AUDIENCES = [
   ["🏆","Coaches & Educators","Know what's resonating in your field. Understand the content that's connecting with your target audience every single day."],
 ];
 
+/** Amazon Associates disclosure. Use this exact sentence wherever affiliate links appear. */
+export const AMAZON_DISCLOSURE = "As an Amazon Associate I earn from qualifying purchases.";
+
+export type TrendingFind = {
+  name: string;
+  /** One-line product blurb. */
+  blurb: string;
+  /** Dollar amount only, e.g. "$9". Rendered as "About $9 on Amazon". Omit when unknown. */
+  priceLabel?: string;
+  amazonUrl: string;
+  /** YouTube Short featuring this product. */
+  shortUrl?: string;
+  /** Local image path such as /media/sprayer.png. Never an Amazon CDN URL. */
+  image?: string;
+  /** Emoji shown on the card. Product photos are not loaded from Amazon. */
+  icon: string;
+};
+
+export const TRENDING_FINDS: TrendingFind[] = [
+  {
+    name: "Olive Oil Sprayer",
+    blurb: "Fine, even mist for salads and air-frying.",
+    priceLabel: "$9",
+    amazonUrl: "https://www.amazon.com/dp/B0CJF94M8J?tag=nomoreforev05-20",
+    shortUrl: "https://youtube.com/shorts/EueWiEGf7rk",
+    icon: "🫒",
+  },
+  {
+    name: "Veggie Chopper",
+    blurb: "Dices an onion in one press.",
+    priceLabel: "$28",
+    amazonUrl: "https://www.amazon.com/dp/B0764HS4SL?tag=nomoreforev05-20",
+    shortUrl: "https://youtube.com/shorts/_588HcCZils",
+    icon: "🧅",
+  },
+  {
+    name: "Chicken Shredder",
+    blurb: "Shreds cooked chicken with a few twists.",
+    priceLabel: "$20",
+    amazonUrl: "https://www.amazon.com/dp/B0CJN8ZWL1?tag=nomoreforev05-20",
+    shortUrl: "https://youtube.com/shorts/nlMyeO3wotc",
+    icon: "🍗",
+  },
+  {
+    name: "Magnetic Tool Wristband",
+    blurb: "Keeps screws and nails right on your wrist.",
+    amazonUrl: "https://www.amazon.com/dp/B01HRCU3SW?tag=nomoreforev05-20",
+    shortUrl: "https://youtube.com/shorts/EpXzMTB_4zE",
+    icon: "🧲",
+  },
+  {
+    name: "Butter Spreader",
+    blurb: "Spreads butter evenly, even on soft toast.",
+    amazonUrl: "https://www.amazon.com/dp/B09WZKQH5G?tag=nomoreforev05-20",
+    shortUrl: "https://youtube.com/shorts/DbuNx97E2Jw",
+    icon: "🧈",
+  },
+];
+
 export type SampleVideo = {
   rank: string;
   creator: string;
