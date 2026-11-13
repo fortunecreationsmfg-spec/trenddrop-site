@@ -1,16 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BRAND, CONTACT_EMAIL, LEGAL_NAME, SIGNUP_URL, PRICE, TRIAL_LABEL } from "@/lib/content";
+import { AMAZON_DISCLOSURE, BRAND, CONTACT_EMAIL, LEGAL_NAME, SIGNUP_URL, PRICE, TRIAL_LABEL } from "@/lib/content";
 export function Header(){return(
 <header className="sticky top-0 z-40 border-b border-white/10 bg-night/90 text-white backdrop-blur">
  <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
   <Link href="/" aria-label={BRAND}><Image src="/media/logo.png" alt={BRAND} width={150} height={32} priority className="h-8 w-auto"/></Link>
   <nav className="flex items-center gap-5 text-sm">
+   <Link href="/#trending-finds" className="hidden shrink-0 hover:text-cyan sm:inline">Trending Finds</Link>
    <Link href="/#how" className="hidden sm:inline hover:text-cyan">How it works</Link>
    <Link href="/#pricing" className="hidden sm:inline hover:text-cyan">Pricing</Link>
    <Link href="/faq" className="hover:text-cyan">FAQ</Link>
    <a href={SIGNUP_URL} className="btn btn-pink !py-2 text-sm">Start · {TRIAL_LABEL}</a>
   </nav>
+ </div>
+ <div className="border-t border-white/10 px-4 py-2 text-center text-sm sm:hidden">
+  <Link href="/#trending-finds" className="font-semibold text-cyan">Trending Finds</Link>
  </div>
 </header>)}
 export function Footer(){return(
@@ -19,6 +23,7 @@ export function Footer(){return(
   <p>© 2026 {BRAND}. All rights reserved. Operated by {LEGAL_NAME}.</p>
   <p>Know What&apos;s Going Viral. Every Morning. · <a className="underline" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></p>
  </div>
+ <p className="mx-auto mt-4 max-w-6xl px-4 text-white/60">{AMAZON_DISCLOSURE}</p>
 </footer>)}
 export function CTA(){return(
 <section className="bg-night py-16 text-center text-white">
