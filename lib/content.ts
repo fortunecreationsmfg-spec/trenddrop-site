@@ -46,6 +46,14 @@ export type TrendingFind = {
 
 export const TRENDING_FINDS: TrendingFind[] = [
   {
+    name: "Astronaut Galaxy Star Projector",
+    blurb: "A little astronaut night light that fills your ceiling with a drifting nebula and twinkling stars.",
+    priceLabel: "$35",
+    amazonUrl: "https://www.amazon.com/dp/B09FL6YR9L?tag=nomoreforev05-20",
+    shortUrl: "https://youtube.com/shorts/ZOcvxWl0CIg",
+    icon: "🌌",
+  },
+  {
     name: "Olive Oil Sprayer",
     blurb: "Fine, even mist for salads and air-frying.",
     priceLabel: "$9",
