@@ -46,6 +46,14 @@ export type TrendingFind = {
 
 export const TRENDING_FINDS: TrendingFind[] = [
   {
+    name: "Flower Candle Warmer Lamp",
+    blurb: "An amber lily-of-the-valley lamp that melts your jar candle from above, no flame needed.",
+    priceLabel: "$24",
+    amazonUrl: "https://www.amazon.com/dp/B0CFF28K7G?tag=nomoreforev05-20",
+    shortUrl: "https://youtube.com/shorts/UCCkD37Ahro",
+    icon: "🕯️",
+  },
+  {
     name: "Astronaut Galaxy Star Projector",
     blurb: "A little astronaut night light that fills your ceiling with a drifting nebula and twinkling stars.",
     priceLabel: "$35",
