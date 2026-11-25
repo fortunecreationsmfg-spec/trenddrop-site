@@ -46,6 +46,14 @@ export type TrendingFind = {
 
 export const TRENDING_FINDS: TrendingFind[] = [
   {
+    name: "Flame Aroma Diffuser",
+    blurb: "A cool-mist diffuser lit orange so the rising mist looks like a little dancing flame.",
+    priceLabel: "$22",
+    amazonUrl: "https://www.amazon.com/dp/B0G6KVMMDT?tag=nomoreforev05-20",
+    shortUrl: "https://youtube.com/shorts/A41MAWawVqI",
+    icon: "🔥",
+  },
+  {
     name: "Flower Candle Warmer Lamp",
     blurb: "An amber lily-of-the-valley lamp that melts your jar candle from above, no flame needed.",
     priceLabel: "$24",
