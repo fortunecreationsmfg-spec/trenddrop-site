@@ -46,6 +46,14 @@ export type TrendingFind = {
 
 export const TRENDING_FINDS: TrendingFind[] = [
   {
+    name: "Handheld Milk Frother",
+    blurb: "A spinning whisk wand that turns plain milk into creamy cafe-style foam in seconds.",
+    priceLabel: "$8",
+    amazonUrl: "https://www.amazon.com/dp/B0CGC3JGLF?tag=nomoreforev05-20",
+    shortUrl: "https://youtube.com/shorts/1Q06KfthkY4",
+    icon: "☕",
+  },
+  {
     name: "Flame Aroma Diffuser",
     blurb: "A cool-mist diffuser lit orange so the rising mist looks like a little dancing flame.",
     priceLabel: "$22",
